@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Biner from './konversi/biner'
+import Desimal from './konversi/desimal'
+import Hexadesimal from './konversi/hexadesimal'
+import Oktal from './konversi/oktal'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='pt-3 pb-3'>
+        <Biner />
+      </div>
+      <div className='pt-3 pb-3'>
+        <Desimal />
+      </div>
+      <div className='pt-3 pb-3'>
+        <Oktal />
+      </div>
+      <div className='pt-3 pb-3'>
+        <Hexadesimal />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+

@@ -4,9 +4,9 @@ class Biner extends Component {
     constructor() {
         super();
         this.state = {
-            biner: null,
+            biner: 0,
             option: "",
-            result: null
+            result: 0
         }
     }
 
@@ -44,7 +44,7 @@ class Biner extends Component {
         return (
             <div className="container col-md-6">
                 <div className="card">
-                    <div className="card-header bg-danger text-center text-white">
+                    <div className="card-header bg-primary text-center text-white">
                         <h3>Konversi Bilangan Biner</h3>
                     </div>
                     <div className="card-body">
@@ -61,9 +61,9 @@ class Biner extends Component {
                             </select>
                         </div>
                         <div className="form-group mb-3">
-                            <button className="btn btn-danger form-control" onClick={this.convert}>Convert</button>
+                            <button className="btn btn-success form-control" onClick={this.convert}>Convert</button>
                         </div>
-                        <h5 className="alert alert-secondary">{this.state.result}</h5>
+                        <h5 className="p-3 form-control text-center">{this.state.result}</h5>
                     </div>
                 </div>
             </div>
